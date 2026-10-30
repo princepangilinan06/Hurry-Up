@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hurry Up Car Transportation Service, based inside Score Birds Hotel, Angeles City.">
+  <title>Hurry Up | Car Transportation Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Hurry Up home">
+      <img src="asset/img/hurry-up-logo.png" alt="Hurry Up Car Transportation Service">
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#fleet">Vehicles</a>
+      <a href="#calculator">Fare calculator</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#calculator">Get a receipt <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-photo"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> SCORE BIRDS HOTEL · ANGELES CITY</p>
+        <h1>Your ride.<br><em>Right on time.</em></h1>
+        <p class="hero-copy">Comfortable and dependable transportation for airport transfers, city trips, and journeys beyond Pampanga.</p>
+        <div class="hero-actions">
+          <a class="btn btn-red" href="#calculator">Calculate your fare <span>↗</span></a>
+          <a class="text-link" href="#services">Explore our services <span>↓</span></a>
+        </div>
+      </div>
+      <div class="hero-note"><img src="asset/img/hurry-up-logo.png" alt="Hurry Up Car Transportation Service"></div>
+      <div class="hero-bottom">
+        <span>01 / TRANSPORTATION MADE SIMPLE</span>
+        <span>ANGELES CITY, PAMPANGA <b>↗</b></span>
+      </div>
+    </section>
+
+    <section class="intro section-wrap" id="services">
+      <div class="section-heading">
+        <p class="eyebrow red">WHAT WE DO</p>
+        <h2>Go places.<br><em>We'll take you there.</em></h2>
+      </div>
+      <div class="intro-copy">
+        <p>From airport pickups to out-of-town destinations, Hurry Up makes getting there more convenient. Choose a vehicle, tell us where you're headed, and calculate your fare.</p>
+        <a class="under-link" href="#calculator">Plan your trip <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="service-grid section-wrap">
+      <article class="service-card service-airport">
+        <div class="service-number">01</div><div class="service-card-content"><p>AIRPORT TRANSFERS</p><h3>Arrive with<br>peace of mind.</h3><span>NAIA · Clark · Other airports</span></div>
+      </article>
+      <article class="service-card service-city">
+        <div class="service-number">02</div><div class="service-card-content"><p>LOCAL TRANSPORT</p><h3>Easy rides<br>around town.</h3><span>Angeles City · Pampanga</span></div>
+      </article>
+      <article class="service-card service-long">
+        <div class="service-number">03</div><div class="service-card-content"><p>OUT-OF-TOWN TRIPS</p><h3>Go farther.<br>Travel comfortably.</h3><span>Intercity and long-distance trips</span></div>
+      </article>
+    </section>
+
+    <section class="fleet-section" id="fleet">
+      <div class="section-wrap">
+        <div class="fleet-heading">
+          <div><p class="eyebrow red">CHOOSE YOUR RIDE</p><h2>Our <em>Vehicles.</em></h2></div>
+          <p>Pick the vehicle that fits your trip. Final availability and vehicle assignment are subject to confirmation.</p>
+        </div>
+        <div class="fleet-grid">
+          <article class="fleet-card">
+            <div class="vehicle-visual suv-visual"><span class="vehicle-tag">01 / COMFORT</span><img class="vehicle-photo" src="asset/img/suv.png" alt="Toyota Innova" loading="lazy"></div>
+            <div class="fleet-info"><div><h3>SUV</h3><p>Comfortable everyday travel</p></div><a href="#calculator" aria-label="Calculate SUV fare">↗</a></div>
+          </article>
+          <article class="fleet-card">
+            <div class="vehicle-visual van-visual"><span class="vehicle-tag">02 / GROUP TRAVEL</span><img class="vehicle-photo" src="asset/img/van.png" alt="Passenger van" loading="lazy"></div>
+            <div class="fleet-info"><div><h3>Van</h3><p>More room for your group</p></div><a href="#calculator" aria-label="Calculate van fare">↗</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="calculator-section" id="calculator">
+      <div class="section-wrap calculator-layout">
+        <div class="calculator-intro">
+          <p class="eyebrow">FARE CALCULATOR</p>
+          <h2>Know your fare<br><em>before you go.</em></h2>
+          <p>Enter your trip details and one-way distance to calculate your transportation fare and generate a receipt.</p>
+          <div class="calc-tip"><span>↗</span><p><strong>Good to know</strong><br>Your receipt shows the calculated fare and cost breakdown. Confirm your trip details with our team before booking.</p></div>
+        </div>
+        <div class="calculator-card">
+          <div class="calc-card-top"><div><span class="small-label">HURRY UP</span><h3>Trip details</h3></div><span class="calc-icon">↗</span></div>
+          <form id="fareForm">
+            <div class="form-grid">
+              <label class="field full">Guest name<input id="guestName" type="text" placeholder="Enter guest name"></label>
+              <label class="field full">From<input id="origin" type="text" value="Score Birds Hotel, Angeles City" readonly aria-readonly="true"></label>
+              <label class="field full">To<input id="destination" type="text" placeholder="Enter destination, airport, hotel, or address" required autocomplete="off"></label>
+              <div class="route-status field full" id="routeStatus" role="status">Enter the destination and driving distance manually. Use the one-way road distance in kilometers.</div>
+              <label class="field">Driving distance (one-way, km)<input id="distance" type="number" min="0.1" step="0.1" placeholder="e.g. 103" required></label>
+              <label class="field">Current fuel price (₱/L)<input id="fuelPrice" type="number" min="0" step="0.01" value="92.86" required></label>
+              <label class="field">Toll allowance (₱)<input id="toll" type="number" min="0" step="0.01" value="1450"></label>
+              <label class="field">Driver's name<input id="driverName" type="text" placeholder="Enter driver name"></label>
+              <label class="field">Vehicle type<select id="vehicle"><option value="SUV">SUV</option><option value="Van">Van</option></select></label>
+              <label class="field">Round trip?<select id="roundTrip"><option value="no">No</option><option value="yes">Yes</option></select></label>
+              <label class="field">Driver salary (₱)<input id="driverSalary" type="number" min="0" step="1" value="1000"></label>
+              <label class="field">Profit markup (%)<input id="profitRate" type="number" min="0" step="0.1" value="22"></label>
+            </div>
+            <details class="advanced-settings">
+              <summary>Adjust operating assumptions</summary>
+              <div class="form-grid settings-grid">
+                <label class="field">SUV fuel efficiency (km/L)<input id="suvEfficiency" type="number" min="0.1" step="0.1" value="7"></label>
+                <label class="field">Van fuel efficiency (km/L)<input id="vanEfficiency" type="number" min="0.1" step="0.1" value="5"></label>
+                <label class="field">Vehicle allocation (₱/km)<input id="vehicleRate" type="number" min="0" step="0.01" value="3.40"></label>
+                <label class="field">Admin allocation (₱/km)<input id="adminRate" type="number" min="0" step="0.01" value="6.30"></label>
+              </div>
+              <p class="assumption-note">These are editable planning assumptions, not verified historical costs. The initial SUV values recreate the illustrative ₱333 vehicle allocation and ₱617 admin allocation at 98 km.</p>
+            </details>
+            <div class="salary-hint" id="salaryHint">Suggested driver salary for 98 km: ₱1,000. You can edit this amount.</div>
+            <button class="btn btn-red calculate-btn" type="submit">Calculate fare <span>↗</span></button>
+          </form>
+          <div class="result-panel" id="resultPanel" aria-live="polite" hidden>
+            <div class="receipt-brandline"><span>HURRY UP!</span><span>FARE RECEIPT</span></div>
+            <div class="receipt-date">Prepared: <span id="receiptDate"></span></div>
+            <div class="result-heading"><div><span class="small-label">CALCULATED FARE</span><h3 id="totalPrice"></h3></div><span class="result-status">CALCULATED</span></div>
+            <div class="result-meta"><span id="resultDestination"></span><span id="resultTrip"></span></div>
+            <div class="receipt-parties"><span>GUEST: <strong id="receiptGuest"></strong></span><span>DRIVER: <strong id="receiptDriver"></strong></span></div>
+            <div class="breakdown" id="breakdown">
+            </div>
+            <p class="result-footnote">Toll is treated as the total allowance for the entire trip, including return travel when applicable. Vehicle and administrative reserves are shown as part of total gain, not deducted as immediate trip payments.</p>
+            <button type="button" class="btn btn-dark" id="printReceipt">Print / Save receipt</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise-strip">
+      <div class="section-wrap promise-grid">
+        <div><span>01</span><p><strong>Convenient transfers</strong><br>Airport and local transportation</p></div>
+        <div><span>02</span><p><strong>Vehicle options</strong><br>SUV and van options</p></div>
+        <div><span>03</span><p><strong>Clear calculations</strong><br>Know the cost components</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="section-wrap footer-main">
+      <div class="footer-brand"><img src="asset/img/hurry-up-logo.png" alt="Hurry Up logo"><p>Car transportation service<br>Inside Score Birds Hotel</p></div>
+      <div class="footer-contact"><p class="eyebrow">GET IN TOUCH</p><a href="tel:+63453227496">(045) 322-7496</a><a href="tel:+639619933857">+63 961 993 3857</a><a href="mailto:info@scorebirdshotel.com">info@scorebirdshotel.com</a></div>
+      <div class="footer-contact"><p class="eyebrow">FIND US</p><p>Inside of Score Birds Hotel<br>Angeles City, Pampanga</p><a href="https://www.facebook.com/HurryUpCarTransportationService" target="_blank" rel="noopener">Facebook page ↗</a></div>
+    </div>
+    <div class="footer-bottom"><div class="section-wrap"><span>© <span id="year"></span> HURRY UP CAR TRANSPORTATION SERVICE</span><span>TRAVEL WITH CONFIDENCE.</span></div></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
